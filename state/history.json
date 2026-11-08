@@ -1,36 +1,36 @@
 [
   {
     "date": "2026-11-08",
-    "title": "食料品減税法案の衆院通過とマルチエージェント設計",
+    "title": "マルチエージェント設計と食料品減税の動き",
     "segments": [
       {
         "kind": "headline",
-        "title": "マルチエージェント設計の知見をGitHubやGoogleが整理",
-        "interest": "AI・テック"
+        "title": "食料品の消費税減税法案が参議院へ",
+        "interest": "日本の経済・金融"
       },
       {
         "kind": "headline",
-        "title": "HIS子会社がWi-Fiレンタル料で不当表示、消費者庁",
+        "title": "HIS子会社によるモバイルWi-Fi割引の不当表示",
         "interest": "マーケ・SNS"
       },
       {
         "kind": "headline",
-        "title": "メタがパーソナルAI「Muse」に新機能「スペース」を追加",
+        "title": "MetaがMuse向け新機能スペースを提供開始",
         "interest": "AI・テック"
       },
       {
         "kind": "headline",
-        "title": "米財務長官と中国副首相が電話会談、貿易休戦の状況協議",
+        "title": "米トランプ大統領がミラー氏を首席補佐官に任命",
         "interest": "世界情勢"
       },
       {
         "kind": "deep",
-        "title": "食料品の消費税減税法案が衆院通過、直販ECや農業への影響",
-        "interest": "日本の経済・金融"
+        "title": "複数AIの協調で業務を変えるマルチエージェント設計",
+        "interest": "AI・テック"
       },
       {
         "kind": "skill",
-        "title": "STP分析の第一歩、市場を分けるセグメンテーションの4要素",
+        "title": "STP分析の第2ステップ：ターゲティングの評価軸",
         "interest": "スキル"
       }
     ]
