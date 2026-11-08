@@ -99,6 +99,12 @@ class Gemini:
                     wait = base_wait * (attempt + 1)
                     log.warning("  %s: %s が混雑・上限（%s）。%.0f秒待って再試行", step, model, code, wait)
                     time.sleep(wait)
+                except Exception as e:  # 通信の切断・タイムアウトなど（API の応答そのものが届かなかった）
+                    last = e
+                    wait = base_wait * (attempt + 1)
+                    log.warning("  %s: %s との通信が切れました（%s）。%.0f秒待って再試行",
+                                step, model, type(e).__name__, wait)
+                    time.sleep(wait)
             if model != models[-1]:
                 log.warning("  %s: 次のモデルに切り替えます", step)
         raise RuntimeError(f"{step}: Gemini を呼び出せませんでした（{last}）")

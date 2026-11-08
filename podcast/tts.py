@@ -120,6 +120,8 @@ def _generate(client, cfg, parts, speech_config) -> tuple[bytes, str]:
                 code = getattr(e, "code", None)
                 if code not in RETRYABLE or (code == 429 and "PerDay" in str(e)):
                     break  # 設定ミスや1日の上限は、待っても直らない
+            except Exception as e:  # 通信の切断・タイムアウトなど
+                last = e
             wait = base_wait * (attempt + 1)
             log.warning("  音声: %s で失敗（%s）。%.0f秒待って再試行", model, str(last)[:120], wait)
             time.sleep(wait)
