@@ -1,0 +1,60 @@
+# ===== 番組の設定（無料版） =====
+title: "Ken's Daily Brief"
+subtitle: "毎朝15分、世界とビジネスを“浅く広く・ときどき深く”"
+author: "Ken"
+language: ja
+timezone: Asia/Tokyo
+
+episode_minutes: 15        # 1回の長さ（分）
+chars_per_minute: 300      # 日本語の読み上げ速度の目安（台本の文字数の計算に使う）
+keep_episodes: 21          # 配信に残す回数。古い回は自動で削除
+lookback_hours: 36         # 何時間前までのニュースを候補にするか
+
+segments:
+  headlines: 4             # 浅く広く：ヘッドラインの本数（各1分前後）
+  deep_minutes: 6          # 深く：深掘りコーナーの長さ
+  skill_minutes: 3         # 1日1スキル：知識・スキルのコーナー
+
+collect:
+  max_items_per_feed: 8    # 1つのRSSから候補にする最新記事の数
+  max_candidates: 70       # 編集長（AI）に見せる候補の上限
+  article_chars: 2500      # 記事本文の抜粋の長さ
+  deep_fetches: 3          # 深掘りで本文を確かめるページ数
+  skill_fetches: 2
+
+# Gemini のモデル（左から順に使い、無料枠の上限などで失敗したら次を試す）
+models:
+  editor: [gemini-3.8-flash, gemini-2.5-flash]
+  research: [gemini-2.5-flash, gemini-2.5-flash-lite]   # 検索つき。無料枠で検索が使えるのは 2.5 系だけ
+  script: [gemini-3.8-flash, gemini-2.5-flash]
+  factcheck: [gemini-3.8-flash, gemini-2.5-flash]
+
+# 2人の掛け合い。voice は Gemini の声、voicevox は予備の VOICEVOX の話者名
+hosts:
+  - id: Aoi
+    name: アオイ
+    role: 解説役。落ち着いていて、結論から話す。数字と出典を大事にする。
+    voice: Kore
+    style: 落ち着いた、聞き取りやすいニュース解説のトーン
+    voicevox: 春日部つむぎ
+  - id: Haru
+    name: ハル
+    role: 聞き手。リスナーの代わりに素朴な疑問や「それって自分の事業にどう効く？」を聞く。
+    voice: Puck
+    style: 好奇心があり、テンポよく、親しみやすい
+    voicevox: 玄野武宏
+
+tts:
+  engine: gemini                # gemini（自然な声）/ voicevox（台本を Google に送らない・回数制限なし）
+  model: gemini-3.8-flash-tts
+  fallback_model: gemini-3.8-flash-lite-tts
+  fallback_to_voicevox: true    # Gemini の音声が無料枠の上限などで作れないときは VOICEVOX で作る
+  max_chars_per_request: 2400   # 1回の音声生成に送る文字数（約8分ぶん。回数を節約）
+  min_interval_sec: 21          # 無料枠の「1分あたりの回数」に当たらないよう間隔をあける
+  gap_sec: 0.6                  # コーナー間の無音
+  chime: true                   # コーナー間の短い効果音（自作のサイン波）
+  mp3_bitrate: 64k
+  voicevox:
+    image: voicevox/voicevox_engine:cpu-latest
+    style: ノーマル
+    speed: 1.1

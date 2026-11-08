@@ -1,0 +1,142 @@
+# ===== 情報源（無料版） =====
+# ニュースの候補は、下の feeds（公式のRSS）からだけ集めます。
+# interests は、その RSS がどの興味分野に関係しやすいかの目安です（最終的な分類は AI が決める）。
+# URL は 2026年11月時点で各サイトの公式ページ等で確認したものです。止まった RSS はログに表示されるので、外すか差し替えてください。
+
+feeds:
+  - name: NHKニュース（主要）
+    url: https://www.nhk.or.jp/rss/news/cat0.xml
+    interests: [日本の経済・金融, 世界情勢]
+  - name: NHKニュース（政治）
+    url: https://www.nhk.or.jp/rss/news/cat4.xml
+    interests: [日本の経済・金融]
+  - name: NHKニュース（経済）
+    url: https://www.nhk.or.jp/rss/news/cat5.xml
+    interests: [日本の経済・金融, 投資・資産形成, 中小企業・価格転嫁]
+  - name: NHKニュース（国際）
+    url: https://www.nhk.or.jp/rss/news/cat6.xml
+    interests: [世界情勢]
+  - name: NHKニュース（科学・医療）
+    url: https://www.nhk.or.jp/rss/news/cat3.xml
+    interests: [AI・テック]
+  - name: BBCニュース 日本語
+    url: https://feeds.bbci.co.uk/japanese/rss.xml
+    interests: [世界情勢]
+  - name: 内閣府 報道発表
+    url: https://www.cao.go.jp/rss/news.rdf
+    interests: [日本の経済・金融]
+  - name: 日本銀行 新着情報
+    url: https://www.boj.or.jp/rss/whatsnew.xml
+    interests: [日本の経済・金融, 投資・資産形成]
+  - name: 金融庁 新着情報
+    url: https://www.fsa.go.jp/fsaNewsListAll_rss2.xml
+    interests: [投資・資産形成]
+  - name: 経済産業省 ニュースリリース
+    url: https://www.meti.go.jp/ml_index_release_atom.xml
+    interests: [中小企業・価格転嫁, EC・越境EC, AI・テック, 起業]
+  - name: 農林水産省 報道発表
+    url: https://www.maff.go.jp/rss.xml
+    interests: [農業・食]
+  - name: 消費者庁 新着情報
+    url: https://www.caa.go.jp/news.rss
+    interests: [マーケ・SNS]
+  - name: ITmedia AI+
+    url: https://rss.itmedia.co.jp/rss/2.0/aiplus.xml
+    interests: [AI・テック]
+  - name: ITmedia NEWS 速報
+    url: https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml
+    interests: [AI・テック, マーケ・SNS]
+  - name: Impress Watch
+    url: https://www.watch.impress.co.jp/data/rss/1.0/ipw/feed.rdf
+    interests: [AI・テック]
+  - name: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/data/rss/1.0/iw/feed.rdf
+    interests: [AI・テック, マーケ・SNS]
+  - name: OpenAI News
+    url: https://openai.com/news/rss.xml
+    interests: [AI・テック]
+  - name: Google DeepMind Blog
+    url: https://deepmind.google/blog/rss.xml
+    interests: [AI・テック]
+
+# ===== 深掘り・スキル調査で「出典として使ってよい」サイト =====
+# 調査は Google 検索で行いますが、ここに載っていないサイトの情報は台本に使いません（あとから除外）。
+# サブドメインも含みます（例: meti.go.jp は chusho.meti.go.jp も含む）。RSS の配信元は自動で追加されます。
+trusted:
+  japan_gov:
+    - kantei.go.jp
+    - cao.go.jp
+    - meti.go.jp
+    - maff.go.jp
+    - mof.go.jp
+    - mhlw.go.jp
+    - soumu.go.jp
+    - mlit.go.jp
+    - stat.go.jp
+    - e-stat.go.jp
+    - mofa.go.jp
+    - caa.go.jp
+    - jftc.go.jp
+    - fsa.go.jp
+    - digital.go.jp
+    - jetro.go.jp
+    - jfc.go.jp
+    - smrj.go.jp
+    - naro.go.jp
+    - boj.or.jp
+    - jpx.co.jp
+    - pref.gunma.jp
+    - city.tomioka.lg.jp
+  japan_news:
+    - nhk.or.jp
+    - web.nhk
+    - nikkei.com
+    - jiji.com
+    - asahi.com
+    - yomiuri.co.jp
+    - mainichi.jp
+    - sankei.com
+    - jomo-news.co.jp
+    - agrinews.co.jp
+  world_news:
+    - reuters.com
+    - apnews.com
+    - bbc.com
+    - bbc.co.uk
+    - afpbb.com
+    - bloomberg.co.jp
+    - bloomberg.com
+    - ft.com
+    - economist.com
+  intl_org:
+    - imf.org
+    - worldbank.org
+    - oecd.org
+    - un.org
+    - wto.org
+    - fao.org
+    - iea.org
+    - who.int
+  tech_and_business:
+    - anthropic.com
+    - openai.com
+    - blog.google
+    - deepmind.google
+    - microsoft.com
+    - nvidia.com
+    - apple.com
+    - about.fb.com
+    - about.instagram.com
+    - newsroom.tiktok.com
+    - blog.youtube
+    - itmedia.co.jp
+    - impress.co.jp
+    - markezine.jp
+    - advertimes.com
+    - hbr.org
+    - thinkwithgoogle.com
+  research:
+    - nature.com
+    - science.org
+    - arxiv.org
+    - jstage.jst.go.jp

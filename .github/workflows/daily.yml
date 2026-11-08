@@ -1,0 +1,113 @@
+name: daily-podcast
+# 無料版: Gemini API の無料枠 + 公式RSS + GitHub（公開リポジトリ）だけで動く。予備の VOICEVOX は Docker で起動する
+
+on:
+  schedule:
+    - cron: "40 20 * * *"   # 毎日 05:40（日本時間）。GitHub は UTC で書くので 20:40。混雑時は数分〜遅れることがあります
+  workflow_dispatch:
+    inputs:
+      mock:
+        description: "テスト実行（APIを使わない・費用ゼロ）"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write    # 学習の記録（state/）と過去回の保管（gh-pages ブランチ）を書き込む
+  pages: write       # GitHub Pages に公開する
+  id-token: write    # GitHub Pages に公開する
+
+concurrency:
+  group: daily-podcast
+  cancel-in-progress: false
+
+jobs:
+  episode:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 準備（ライブラリと ffmpeg）
+        run: |
+          pip install -r requirements.txt
+          if ! command -v ffmpeg >/dev/null; then sudo apt-get update && sudo apt-get install -y ffmpeg; fi
+
+      - name: 公開先の URL を確認（Settings → Pages で「GitHub Actions」を選んでおく必要あり）
+        id: pages
+        uses: actions/configure-pages@v6
+
+      - name: 過去の回を取り出す（gh-pages ブランチに保管している）
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p site
+          REMOTE="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          if git ls-remote --exit-code --heads "$REMOTE" gh-pages >/dev/null 2>&1; then
+            git clone --quiet --depth 1 --branch gh-pages "$REMOTE" _pages
+            rm -rf _pages/.git
+            cp -a _pages/. site/
+            rm -rf _pages
+          fi
+
+      - name: エピソードを作る
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FEEDBACK_URL: ${{ secrets.FEEDBACK_URL }}
+          FEEDBACK_TOKEN: ${{ secrets.FEEDBACK_TOKEN }}
+          PROFILE_YAML: ${{ secrets.PROFILE_YAML }}
+          PRIVATE_CONTEXT: ${{ secrets.PRIVATE_CONTEXT }}
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
+          MOCK: ${{ inputs.mock }}
+        run: |
+          if [ "$MOCK" = "true" ]; then
+            python -m podcast --mock --site-dir site
+          else
+            python -m podcast --site-dir site
+          fi
+
+      - name: 公開ファイルを保管（gh-pages ブランチを最新の1コミットだけにして置き換え）
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd site
+          git init --quiet -b gh-pages
+          git add -A
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit --quiet -m "publish $(date -u +%F)"
+          git push --force --quiet "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+
+      - name: GitHub Pages に公開
+        id: deploy
+        uses: actions/deploy-pages@v5
+
+      - name: 学習の記録を保存（state/）
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state
+          if ! git diff --cached --quiet; then
+            git commit --quiet -m "state: $(date -u +%F)"
+            git pull --rebase --quiet || true
+            git push --quiet
+          fi
+
+      - name: 途中経過のJSONを保存（7日間・失敗時の原因調査用）
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: debug-${{ github.run_id }}
+          path: out/**/*.json
+          retention-days: 7
+          if-no-files-found: ignore
