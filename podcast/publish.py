@@ -37,17 +37,38 @@ code{background:#0b0d11;padding:2px 6px;border-radius:6px;word-break:break-all}.
 """
 
 JS = """
-function sendFb(btn, params){
-  if(!FB.url){btn.textContent='評価ボタンは未設定です（README の STEP 9）';return;}
-  const q=new URLSearchParams(Object.assign({token:FB.token,ep:FB.ep},params));
-  fetch(FB.url+(FB.url.includes('?')?'&':'?')+q.toString(),{mode:'no-cors'})
-    .then(()=>{btn.classList.add('sent');if(!btn.dataset.done){btn.textContent+=' ✓';btn.dataset.done='1';}})
-    .catch(()=>{btn.textContent='送信できませんでした';});
+function toast(msg, ok){
+  let el=document.getElementById('fbtoast');
+  if(!el){el=document.createElement('div');el.id='fbtoast';
+    el.style.cssText='position:fixed;left:50%;bottom:24px;transform:translateX(-50%);padding:12px 18px;border-radius:12px;'
+      +'font-size:.95rem;z-index:99;max-width:90%;text-align:center;box-shadow:0 4px 16px rgba(0,0,0,.4)';
+    document.body.appendChild(el);}
+  el.textContent=msg;el.style.background=ok?'#1f6f4a':'#7a2a2a';el.style.color='#fff';el.style.display='block';
+  clearTimeout(el._t);el._t=setTimeout(()=>{el.style.display='none';},3500);
 }
-document.querySelectorAll('[data-fb]').forEach(b=>b.addEventListener('click',()=>sendFb(b,JSON.parse(b.dataset.fb))));
+function sendFb(btn, params, label){
+  if(!FB.url){toast('評価ボタンは未設定です（README の STEP 9）',false);return;}
+  const q=new URLSearchParams(Object.assign({token:FB.token,ep:FB.ep},params));
+  const url=FB.url+(FB.url.includes('?')?'&':'?')+q.toString();
+  const done=(msg)=>{btn.classList.add('sent');if(!btn.dataset.done){btn.textContent+=' ✓';btn.dataset.done='1';}toast(msg,true);};
+  btn.disabled=true;
+  // 受け口（Apps Script）の返事を読んで、本当に記録されたか確かめる
+  fetch(url).then(r=>r.json()).then(j=>{
+    btn.disabled=false;
+    if(j&&j.ok){done(label+'を記録しました');}
+    else{toast('記録できませんでした（合言葉 FEEDBACK_TOKEN を確認）',false);}
+  }).catch(()=>{
+    // 返事が読めない環境では、送るだけ送る（記録は確認できない）
+    fetch(url,{mode:'no-cors'}).then(()=>{btn.disabled=false;done(label+'を送りました');})
+      .catch(()=>{btn.disabled=false;toast('送信できませんでした（通信を確認）',false);});
+  });
+}
+document.querySelectorAll('[data-fb]').forEach(b=>b.addEventListener('click',()=>sendFb(b,JSON.parse(b.dataset.fb),'評価')));
 const rb=document.getElementById('reqbtn');
-if(rb){rb.addEventListener('click',()=>{const t=document.getElementById('reqtext');const v=t.value.trim();if(!v)return;
-  sendFb(rb,{segment:'request',interest:'',action:'request',text:v});t.value='';});}
+if(rb){rb.addEventListener('click',()=>{const t=document.getElementById('reqtext');const v=t.value.trim();
+  if(!v){toast('テーマを書いてから送ってください',false);return;}
+  rb.dataset.done='';rb.textContent='送る';
+  sendFb(rb,{segment:'request',interest:'',action:'request',text:v},'リクエスト「'+v.slice(0,20)+'」');t.value='';});}
 """
 
 
