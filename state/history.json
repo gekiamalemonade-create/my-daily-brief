@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-11-09",
+    "title": "大手ECの不正アクセスと防衛策",
+    "segments": [
+      {
+        "kind": "headline",
+        "title": "Sakana AIが初のモバイルアプリを開発",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "headline",
+        "title": "9月の景気動向指数、2か月ぶりに上昇",
+        "interest": "日本の経済・金融"
+      },
+      {
+        "kind": "headline",
+        "title": "PCモニターにも広がる値上げの動き",
+        "interest": "中小企業・価格転嫁"
+      },
+      {
+        "kind": "headline",
+        "title": "車から強力電波を発信、2Gに強制接続させ逮捕",
+        "interest": "日本の経済・金融"
+      },
+      {
+        "kind": "deep",
+        "title": "大手ECで相次ぐ不正アクセスと、ネットショップが取るべき認証防御",
+        "interest": "EC・越境EC"
+      },
+      {
+        "kind": "skill",
+        "title": "STP分析の第3ステップ：競合と差別化する「ポジショニング」の決め方",
+        "interest": "スキル"
+      }
+    ]
+  },
+  {
     "date": "2026-11-08",
     "title": "マルチエージェント設計と食料品減税の動き",
     "segments": [
