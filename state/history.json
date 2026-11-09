@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-11-10",
+    "title": "日本農業のアジア展開とMCPの進化",
+    "segments": [
+      {
+        "kind": "headline",
+        "title": "AI連携規格MCPの仕様改訂と普及の現在地",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "headline",
+        "title": "米ナスダック市場が一時3パーセント超上昇",
+        "interest": "日本の経済・金融"
+      },
+      {
+        "kind": "headline",
+        "title": "政府がサイバーセキュリティ緊急対策パッケージを決定",
+        "interest": "中小企業・価格転嫁"
+      },
+      {
+        "kind": "headline",
+        "title": "秋葉原にスマートごみ箱22台を新設",
+        "interest": "地方創生・観光"
+      },
+      {
+        "kind": "deep",
+        "title": "ベトナム会談に見る日本農業のアジア展開",
+        "interest": "農業・食"
+      },
+      {
+        "kind": "skill",
+        "title": "STPを具体的な行動に移す「4P分析」の全体像",
+        "interest": "スキル"
+      }
+    ]
+  },
+  {
     "date": "2026-11-09",
     "title": "大手ECの不正アクセスと防衛策",
     "segments": [
