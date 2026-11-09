@@ -93,6 +93,9 @@ class Gemini:
                     if code == 429 and _per_day_exhausted(e):
                         log.warning("  %s: %s は今日の無料枠を使い切りました", step, model)
                         break
+                    if code == 404:
+                        log.warning("  %s: %s はこのプロジェクトでは使えません（提供終了など）", step, model)
+                        break
                     if code not in RETRYABLE:
                         log.warning("  %s: %s でエラー（%s）", step, model, str(e)[:160])
                         break

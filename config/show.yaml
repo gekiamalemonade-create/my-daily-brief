@@ -24,10 +24,12 @@ collect:
 
 # Gemini のモデル（左から順に使い、無料枠の上限などで失敗したら次を試す）
 models:
-  editor: [gemini-3.8-flash, gemini-2.5-flash]
-  research: [gemini-2.5-flash, gemini-2.5-flash-lite]   # 検索つき。無料枠で検索が使えるのは 2.5 系だけ
-  script: [gemini-3.8-flash, gemini-2.5-flash]
-  factcheck: [gemini-3.8-flash, gemini-2.5-flash]
+  # 2.5 系は新しく作ったプロジェクトでは使えなくなった（404 no longer available to new users）ので、予備は 3.5 Flash-Lite
+  editor: [gemini-3.8-flash, gemini-3.5-flash-lite]
+  # 検索つき。無料枠で検索が使えるのは 2.5 系だけ。使えないプロジェクトでは調査を飛ばし、きっかけ記事の本文だけで進める
+  research: [gemini-2.5-flash-lite]
+  script: [gemini-3.8-flash, gemini-3.5-flash-lite]
+  factcheck: [gemini-3.8-flash, gemini-3.5-flash-lite]
 
 # 2人の掛け合い。voice は Gemini の声、voicevox は予備の VOICEVOX の話者名
 hosts:
