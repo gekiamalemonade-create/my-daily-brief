@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-11-11",
+    "title": "米粉と米の海外展開モデルと製品設計",
+    "segments": [
+      {
+        "kind": "headline",
+        "title": "Gemini Notebookの公式APIとMCPサーバが登場",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "headline",
+        "title": "OpenAIがChatGPT向けビジネス機能を発表",
+        "interest": "マーケ・SNS"
+      },
+      {
+        "kind": "headline",
+        "title": "食料品の消費税減税法案が参議院で審議入り",
+        "interest": "日本の経済・金融"
+      },
+      {
+        "kind": "headline",
+        "title": "中国の独身の日セールと消費者の節約志向",
+        "interest": "EC・越境EC"
+      },
+      {
+        "kind": "deep",
+        "title": "米粉・日本米の海外需要拡大と持続可能な輸出ビジネスモデルの設計",
+        "interest": "農業・食"
+      },
+      {
+        "kind": "skill",
+        "title": "4Pの第1要素：顧客価値を具現化する「Product」設計の視点",
+        "interest": "スキル"
+      }
+    ]
+  },
+  {
     "date": "2026-11-10",
     "title": "日本農業のアジア展開とMCPの進化",
     "segments": [
