@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-11-12",
+    "title": "進化するMCPとOpenAI国内推論",
+    "segments": [
+      {
+        "kind": "headline",
+        "title": "進化するMCPとOpenAPIの連携",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "headline",
+        "title": "OpenAIが国内での処理と推論を開始",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "headline",
+        "title": "高市首相の財政運営方針と日銀連携",
+        "interest": "日本の経済・金融"
+      },
+      {
+        "kind": "headline",
+        "title": "海水温上昇による欧州水産業の異変",
+        "interest": "農業・食"
+      },
+      {
+        "kind": "deep",
+        "title": "進化するMCPとOpenAPI：自律エージェント時代のAPI設計",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "skill",
+        "title": "4Pの第2要素：価格で価値を伝える「Price」設計の考え方",
+        "interest": "スキル"
+      }
+    ]
+  },
+  {
     "date": "2026-11-11",
     "title": "米粉と米の海外展開モデルと製品設計",
     "segments": [
