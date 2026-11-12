@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-11-13",
+    "title": "食料品減税と外食の価格戦略",
+    "segments": [
+      {
+        "kind": "headline",
+        "title": "食料品減税見据え丸亀製麺が一部値下げ発表",
+        "interest": "中小企業・価格転嫁"
+      },
+      {
+        "kind": "headline",
+        "title": "円相場が一時1ドル160円台に下落",
+        "interest": "日本の経済・金融"
+      },
+      {
+        "kind": "headline",
+        "title": "アップルCarPlayでGeminiが利用可能に",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "headline",
+        "title": "スマートニュースが12月15日に東証グロース上場へ",
+        "interest": "起業"
+      },
+      {
+        "kind": "deep",
+        "title": "食料品減税と外食・小売の価格戦略",
+        "interest": "農業・食"
+      },
+      {
+        "kind": "skill",
+        "title": "ビジネスの基本指標「粗利」の捉え方と計算の仕組み",
+        "interest": "スキル"
+      }
+    ]
+  },
+  {
     "date": "2026-11-12",
     "title": "進化するMCPとOpenAI国内推論",
     "segments": [
