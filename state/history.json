@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-11-14",
+    "title": "Ken's Daily Brief 20261114",
+    "segments": [
+      {
+        "kind": "headline",
+        "title": "エヌビディアCEO辞任と議会の証言要請",
+        "interest": "世界情勢"
+      },
+      {
+        "kind": "headline",
+        "title": "Googleの高速・低価格AI「Gemini 4 Hydrogen」",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "headline",
+        "title": "データセンター排熱を活用したエビ養殖の実証",
+        "interest": "農業・食"
+      },
+      {
+        "kind": "headline",
+        "title": "食料品減税と支援金対象をめぐる動向",
+        "interest": "日本の経済・金融"
+      },
+      {
+        "kind": "deep",
+        "title": "AIエージェントが自律購入する時代へ：ChatGPT Walletの仕組みとEC事業者の対応",
+        "interest": "EC・越境EC"
+      },
+      {
+        "kind": "skill",
+        "title": "4Pの第3要素：顧客へ届ける道筋をつくる「Place（流通・チャネル）」設計",
+        "interest": "スキル"
+      }
+    ]
+  },
+  {
     "date": "2026-11-13",
     "title": "食料品減税と外食の価格戦略",
     "segments": [
