@@ -1,0 +1,902 @@
+[
+  {
+    "id": "20261114",
+    "date": "2026-11-14",
+    "pub": "2026-11-14T06:29:46+09:00",
+    "title": "Ken's Daily Brief 20261114",
+    "summary": "エヌビディアCEO辞任の波紋、Googleの新型AI、データセンター排熱のエビ養殖、高市首相の発言、そしてChatGPT Walletがもたらすエージェントコマースの未来を深掘りします。",
+    "mp3": "20261114-062946.mp3",
+    "bytes": 2816564,
+    "duration": 352.0,
+    "guid": "ken-s-daily-brief-20261114-062946",
+    "segments": [
+      {
+        "kind": "opening",
+        "title": "オープニング",
+        "interest": "",
+        "sources": []
+      },
+      {
+        "kind": "headline",
+        "title": "エヌビディアCEO辞任と議会の証言要請",
+        "interest": "世界情勢",
+        "sources": [
+          {
+            "id": "S1",
+            "title": "米エヌビディアのフアンCEOが辞任、議会委は証言を要請……不倫問題で大揺れのAI半導体大手",
+            "publisher": "BBC",
+            "url": "https://www.bbc.com/japanese/articles/cm5y1j47wp5yo?at_medium=RSS&at_campaign=rss",
+            "date": "2026-11-13"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "Googleの高速・低価格AI「Gemini 4 Hydrogen」",
+        "interest": "AI・テック",
+        "sources": [
+          {
+            "id": "S2",
+            "title": "Google、高速で低価格の「Gemini 4 Hydrogen」発表 無料ユーザーも利用可能",
+            "publisher": "ITmedia",
+            "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003162/",
+            "date": "2026-11-13"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "データセンター排熱を活用したエビ養殖の実証",
+        "interest": "農業・食",
+        "sources": [
+          {
+            "id": "S3",
+            "title": "データセンターの排熱でエビ養殖、NTT系が実験 育ったら食べられる？ 担当者に聞いてみた",
+            "publisher": "ITmedia",
+            "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003200/",
+            "date": "2026-11-13"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "食料品減税と支援金対象をめぐる動向",
+        "interest": "日本の経済・金融",
+        "sources": [
+          {
+            "id": "S4",
+            "title": "高市首相“支援金対象5割以上” 野党“さらなる具体像を”",
+            "publisher": "NHK",
+            "url": "https://news.web.nhk/newsweb/na/nd-20261114de75743",
+            "date": "2026-11-14"
+          }
+        ]
+      },
+      {
+        "kind": "deep",
+        "title": "AIエージェントが自律購入する時代へ：ChatGPT Walletの仕組みとEC事業者の対応",
+        "interest": "EC・越境EC",
+        "sources": [
+          {
+            "id": "S5",
+            "title": "Introducing ChatGPT Wallet",
+            "publisher": "OpenAI",
+            "url": "https://openai.com/index/introducing-chatgpt-wallet",
+            "date": "2026-11-14"
+          }
+        ]
+      },
+      {
+        "kind": "skill",
+        "title": "4Pの第3要素：顧客へ届ける道筋をつくる「Place（流通・チャネル）」設計",
+        "interest": "スキル",
+        "sources": []
+      },
+      {
+        "kind": "takeaway",
+        "title": "Kenの取り組みへの示唆",
+        "interest": "",
+        "sources": []
+      },
+      {
+        "kind": "closing",
+        "title": "エンディング",
+        "interest": "",
+        "sources": []
+      }
+    ],
+    "factcheck": {
+      "checked_lines": 30,
+      "fixed": 0,
+      "removed": 0,
+      "summary": "すべての行が証拠および本人の取り組みの条件と完全に一致しており、修正や削除の必要はありません。"
+    },
+    "usage_note": "費用 0円（Gemini 無料枠：文章の生成 3 回／音声は VOICEVOX）",
+    "credits": "VOICEVOX:春日部つむぎ / VOICEVOX:玄野武宏"
+  },
+  {
+    "id": "20261113",
+    "date": "2026-11-13",
+    "pub": "2026-11-13T06:28:27+09:00",
+    "title": "食料品減税と外食の価格戦略",
+    "summary": "食料品の消費税減税方針を受けた外食の値下げ戦略を深掘り。為替160円台やCarPlayのGemini対応など重要ニュースと、ビジネスの基礎となる粗利の捉え方を解説します。",
+    "mp3": "20261113-062827.mp3",
+    "bytes": 3705786,
+    "duration": 463.1,
+    "guid": "ken-s-daily-brief-20261113-062827",
+    "segments": [
+      {
+        "kind": "opening",
+        "title": "オープニング",
+        "interest": "",
+        "sources": []
+      },
+      {
+        "kind": "headline",
+        "title": "食料品減税見据え丸亀製麺が一部値下げ発表",
+        "interest": "中小企業・価格転嫁",
+        "sources": [
+          {
+            "id": "S1",
+            "title": "食料品の消費税減税見据え うどんチェーンが値下げ発表",
+            "publisher": "NHK",
+            "url": "https://news.web.nhk/newsweb/na/nd-20261112de75068",
+            "date": "2026-11-12"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "円相場が一時1ドル160円台に下落",
+        "interest": "日本の経済・金融",
+        "sources": [
+          {
+            "id": "S2",
+            "title": "円相場1ドル＝160円台 約2か月ぶり円安水準",
+            "publisher": "NHK",
+            "url": "https://news.web.nhk/newsweb/na/nd-20261113de75110",
+            "date": "2026-11-13"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "アップルCarPlayでGeminiが利用可能に",
+        "interest": "AI・テック",
+        "sources": [
+          {
+            "id": "S3",
+            "title": "CarPlayでGeminiが利用可能に 運転中にメール確認やAIと会話",
+            "publisher": "インプレス",
+            "url": "https://www.watch.impress.co.jp/docs/news/2155992.html",
+            "date": "2026-11-12"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "スマートニュースが12月15日に東証グロース上場へ",
+        "interest": "起業",
+        "sources": [
+          {
+            "id": "S4",
+            "title": "スマートニュース、12月15日に東証グロース上場へ",
+            "publisher": "インプレス",
+            "url": "https://www.watch.impress.co.jp/docs/news/2156003.html",
+            "date": "2026-11-12"
+          }
+        ]
+      },
+      {
+        "kind": "deep",
+        "title": "食料品減税と外食・小売の価格戦略",
+        "interest": "農業・食",
+        "sources": [
+          {
+            "id": "S5",
+            "title": "消費税減税法案 参院特別委で質疑へ 効果や支援金めぐり論戦",
+            "publisher": "NHK",
+            "url": "https://news.web.nhk/newsweb/na/nd-20261113de75105",
+            "date": "2026-11-13"
+          },
+          {
+            "id": "S1",
+            "title": "食料品の消費税減税見据え うどんチェーンが値下げ発表",
+            "publisher": "NHK",
+            "url": "https://news.web.nhk/newsweb/na/nd-20261112de75068",
+            "date": "2026-11-12"
+          }
+        ]
+      },
+      {
+        "kind": "skill",
+        "title": "ビジネスの基本指標「粗利」の捉え方と計算の仕組み",
+        "interest": "スキル",
+        "sources": []
+      },
+      {
+        "kind": "takeaway",
+        "title": "Kenへのテイクアウェイ",
+        "interest": "",
+        "sources": []
+      },
+      {
+        "kind": "closing",
+        "title": "エンディング",
+        "interest": "",
+        "sources": []
+      }
+    ],
+    "factcheck": {
+      "checked_lines": 59,
+      "fixed": 0,
+      "removed": 0,
+      "summary": "すべての行が証拠および本人の取り組みと完全に一致しているため、修正や削除の必要はありません。"
+    },
+    "usage_note": "費用 0円（Gemini 無料枠：文章の生成 3 回／音声は VOICEVOX）",
+    "credits": "VOICEVOX:春日部つむぎ / VOICEVOX:玄野武宏"
+  },
+  {
+    "id": "20261112",
+    "date": "2026-11-12",
+    "pub": "2026-11-12T06:57:58+09:00",
+    "title": "進化するMCPとOpenAI国内推論",
+    "summary": "2026年11月12日号。AIが自らAPIを呼び出すMCPの進化とOpenAI国内推論の開始、高市首相の財政方針や欧州の海洋異変を解説。深掘りではエージェント前提のAPI設計を、スキルでは4Pの価格戦略を取り上げます。",
+    "mp3": "20261112-065758.mp3",
+    "bytes": 4260414,
+    "duration": 532.5,
+    "guid": "ken-s-daily-brief-20261112-065758",
+    "segments": [
+      {
+        "kind": "opening",
+        "title": "オープニング",
+        "interest": "",
+        "sources": [
+          {
+            "id": "S1",
+            "title": "「APIを呼ぶのは、もう人間ではない」 進化するMCPとOpenAPIとの“新しい関係”",
+            "publisher": "ITmedia",
+            "url": "https://atmarkit.itmedia.co.jp/ait/articles/2611/12/news004.html",
+            "date": "2026-11-12"
+          },
+          {
+            "id": "S2",
+            "title": "OpenAI、APIの処理・推論が国内で可能に GPT-6 Lunaから",
+            "publisher": "インプレス",
+            "url": "https://www.watch.impress.co.jp/docs/news/2155544.html",
+            "date": "2026-11-11"
+          },
+          {
+            "id": "S3",
+            "title": "高市首相 \"予見可能性高い財政運営で成長力強化\" 日銀とも連携",
+            "publisher": "NHK",
+            "url": "https://news.web.nhk/newsweb/na/nd-20261111de74430",
+            "date": "2026-11-11"
+          },
+          {
+            "id": "S4",
+            "title": "海水温上昇 イギリスでタコ大量発生 ロブスター ホタテ大幅減",
+            "publisher": "NHK",
+            "url": "https://news.web.nhk/newsweb/na/nd-20261111de74426",
+            "date": "2026-11-11"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "進化するMCPとOpenAPIの連携",
+        "interest": "AI・テック",
+        "sources": [
+          {
+            "id": "S1",
+            "title": "「APIを呼ぶのは、もう人間ではない」 進化するMCPとOpenAPIとの“新しい関係”",
+            "publisher": "ITmedia",
+            "url": "https://atmarkit.itmedia.co.jp/ait/articles/2611/12/news004.html",
+            "date": "2026-11-12"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "OpenAIが国内での処理と推論を開始",
+        "interest": "AI・テック",
+        "sources": [
+          {
+            "id": "S2",
+            "title": "OpenAI、APIの処理・推論が国内で可能に GPT-6 Lunaから",
+            "publisher": "インプレス",
+            "url": "https://www.watch.impress.co.jp/docs/news/2155544.html",
+            "date": "2026-11-11"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "高市首相の財政運営方針と日銀連携",
+        "interest": "日本の経済・金融",
+        "sources": [
+          {
+            "id": "S3",
+            "title": "高市首相 \"予見可能性高い財政運営で成長力強化\" 日銀とも連携",
+            "publisher": "NHK",
+            "url": "https://news.web.nhk/newsweb/na/nd-20261111de74430",
+            "date": "2026-11-11"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "海水温上昇による欧州水産業の異変",
+        "interest": "農業・食",
+        "sources": [
+          {
+            "id": "S4",
+            "title": "海水温上昇 イギリスでタコ大量発生 ロブスター ホタテ大幅減",
+            "publisher": "NHK",
+            "url": "https://news.web.nhk/newsweb/na/nd-20261111de74426",
+            "date": "2026-11-11"
+          }
+        ]
+      },
+      {
+        "kind": "deep",
+        "title": "進化するMCPとOpenAPI：自律エージェント時代のAPI設計",
+        "interest": "AI・テック",
+        "sources": [
+          {
+            "id": "S1",
+            "title": "「APIを呼ぶのは、もう人間ではない」 進化するMCPとOpenAPIとの“新しい関係”",
+            "publisher": "ITmedia",
+            "url": "https://atmarkit.itmedia.co.jp/ait/articles/2611/12/news004.html",
+            "date": "2026-11-12"
+          }
+        ]
+      },
+      {
+        "kind": "skill",
+        "title": "4Pの第2要素：価格で価値を伝える「Price」設計の考え方",
+        "interest": "スキル",
+        "sources": []
+      },
+      {
+        "kind": "takeaway",
+        "title": "Kenの取り組みへの示唆",
+        "interest": "",
+        "sources": [
+          {
+            "id": "S1",
+            "title": "「APIを呼ぶのは、もう人間ではない」 進化するMCPとOpenAPIとの“新しい関係”",
+            "publisher": "ITmedia",
+            "url": "https://atmarkit.itmedia.co.jp/ait/articles/2611/12/news004.html",
+            "date": "2026-11-12"
+          }
+        ]
+      },
+      {
+        "kind": "closing",
+        "title": "エンディング",
+        "interest": "",
+        "sources": []
+      }
+    ],
+    "factcheck": {
+      "checked_lines": 71,
+      "fixed": 0,
+      "removed": 0,
+      "summary": "すべての行が証拠および本人の取り組みの条件と完全に一致しており、修正や削除が必要な問題はありません。"
+    },
+    "usage_note": "費用 0円（Gemini 無料枠：文章の生成 3 回／音声は VOICEVOX）",
+    "credits": "VOICEVOX:春日部つむぎ / VOICEVOX:玄野武宏"
+  },
+  {
+    "id": "20261111",
+    "date": "2026-11-11",
+    "pub": "2026-11-11T06:22:22+09:00",
+    "title": "米粉と米の海外展開モデルと製品設計",
+    "summary": "Gemini NotebookのAPI公開や中国独身の日の動向を整理。深掘りでは米粉アワード創設を起点に米の海外展開モデルを考察し、スキルでは4Pの製品設計を学びます。",
+    "mp3": "20261111-062222.mp3",
+    "bytes": 3854173,
+    "duration": 481.7,
+    "guid": "ken-s-daily-brief-20261111-062222",
+    "segments": [
+      {
+        "kind": "opening",
+        "title": "オープニング",
+        "interest": "",
+        "sources": []
+      },
+      {
+        "kind": "headline",
+        "title": "Gemini Notebookの公式APIとMCPサーバが登場",
+        "interest": "AI・テック",
+        "sources": [
+          {
+            "id": "S1",
+            "title": "NotebookLMに公式APIが登場 WebページやYouTube動画の取り込みを自動化でき、MCPでAIエージェントからも使える",
+            "publisher": "ITmedia",
+            "url": "https://atmarkit.itmedia.co.jp/ait/articles/2611/11/news011.html",
+            "date": "2026-11-11"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "OpenAIがChatGPT向けビジネス機能を発表",
+        "interest": "マーケ・SNS",
+        "sources": [
+          {
+            "id": "S2",
+            "title": "Introducing Businesses in ChatGPT",
+            "publisher": "OpenAI",
+            "url": "https://openai.com/index/introducing-businesses-chatgpt",
+            "date": "2026-11-10"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "食料品の消費税減税法案が参議院で審議入り",
+        "interest": "日本の経済・金融",
+        "sources": [
+          {
+            "id": "S3",
+            "title": "消費税減税法案 参院できょう審議入り 与党少数の中で論戦へ",
+            "publisher": "NHK",
+            "url": "https://news.web.nhk/newsweb/na/nd-20261111de73840",
+            "date": "2026-11-11"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "中国の独身の日セールと消費者の節約志向",
+        "interest": "EC・越境EC",
+        "sources": [
+          {
+            "id": "S4",
+            "title": "中国“独身の日”最大のネットセールも節約志向の声",
+            "publisher": "NHK",
+            "url": "https://news.web.nhk/newsweb/na/nd-20261111de73830",
+            "date": "2026-11-11"
+          }
+        ]
+      },
+      {
+        "kind": "deep",
+        "title": "米粉・日本米の海外需要拡大と持続可能な輸出ビジネスモデルの設計",
+        "interest": "農業・食",
+        "sources": [
+          {
+            "id": "S5",
+            "title": "【募集開始!】米粉の優良な取組を発掘・表彰する新たなアワードを創設",
+            "publisher": "農林水産省",
+            "url": "https://www.maff.go.jp/j/press/nousan/b_taisaku/261110.html",
+            "date": "2026-11-10"
+          }
+        ]
+      },
+      {
+        "kind": "skill",
+        "title": "4Pの第1要素：顧客価値を具現化する「Product」設計の視点",
+        "interest": "スキル",
+        "sources": []
+      },
+      {
+        "kind": "takeaway",
+        "title": "今日の持ち帰り示唆",
+        "interest": "",
+        "sources": [
+          {
+            "id": "S2",
+            "title": "Introducing Businesses in ChatGPT",
+            "publisher": "OpenAI",
+            "url": "https://openai.com/index/introducing-businesses-chatgpt",
+            "date": "2026-11-10"
+          },
+          {
+            "id": "S5",
+            "title": "【募集開始!】米粉の優良な取組を発掘・表彰する新たなアワードを創設",
+            "publisher": "農林水産省",
+            "url": "https://www.maff.go.jp/j/press/nousan/b_taisaku/261110.html",
+            "date": "2026-11-10"
+          }
+        ]
+      },
+      {
+        "kind": "closing",
+        "title": "クロージング",
+        "interest": "",
+        "sources": []
+      }
+    ],
+    "factcheck": {
+      "checked_lines": 61,
+      "fixed": 0,
+      "removed": 0,
+      "summary": "台本内のすべての事実記述（Gemini Notebook API、OpenAIのBusinesses in ChatGPT、消費税減税法案の参院審議入り、中国独身の日セール、農林水産省の米粉アワード）は、提供された証拠および本人の取り組みと正確に一致しており、問題はありません。"
+    },
+    "usage_note": "費用 0円（Gemini 無料枠：文章の生成 3 回／音声は VOICEVOX）",
+    "credits": "VOICEVOX:春日部つむぎ / VOICEVOX:玄野武宏"
+  },
+  {
+    "id": "20261110",
+    "date": "2026-11-10",
+    "pub": "2026-11-10T06:29:56+09:00",
+    "title": "日本農業のアジア展開とMCPの進化",
+    "summary": "AI共通規格MCPの最新改訂やナスダック上昇などの最新動向に加え、日本とベトナムの農業大臣会談から見る米・農業技術のアジア展開を深掘り。マーケティングを施策に落とし込む4P分析の基本も解説します。",
+    "mp3": "20261110-062956.mp3",
+    "bytes": 3819268,
+    "duration": 477.3,
+    "guid": "ken-s-daily-brief-20261110-062956",
+    "segments": [
+      {
+        "kind": "opening",
+        "title": "オープニング",
+        "interest": "",
+        "sources": []
+      },
+      {
+        "kind": "headline",
+        "title": "AI連携規格MCPの仕様改訂と普及の現在地",
+        "interest": "AI・テック",
+        "sources": [
+          {
+            "id": "S1",
+            "title": "「MCPはもう特別な存在ではない」――その普及と“仕様改訂”がもたらした転換点",
+            "publisher": "ITmedia",
+            "url": "https://atmarkit.itmedia.co.jp/ait/articles/2611/10/news003.html",
+            "date": "2026-11-10"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "米ナスダック市場が一時3パーセント超上昇",
+        "interest": "日本の経済・金融",
+        "sources": [
+          {
+            "id": "S2",
+            "title": "ナスダック一時3％超上昇 AI規制の懸念後退や原油安で",
+            "publisher": "NHK",
+            "url": "https://news.web.nhk/newsweb/na/nd-20261110de73229",
+            "date": "2026-11-10"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "政府がサイバーセキュリティ緊急対策パッケージを決定",
+        "interest": "中小企業・価格転嫁",
+        "sources": [
+          {
+            "id": "S3",
+            "title": "政府が「サイバーセキュリティ緊急対策パッケージ」発表、予防から被害者支援までの方針・施策をまとめ 個人・事業者に基本的な対策の徹底を呼びかけ",
+            "publisher": "インプレス",
+            "url": "https://internet.watch.impress.co.jp/docs/news/2154944.html",
+            "date": "2026-11-10"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "秋葉原にスマートごみ箱22台を新設",
+        "interest": "地方創生・観光",
+        "sources": [
+          {
+            "id": "S4",
+            "title": "秋葉原「スマートごみ箱」22台新設 ごみを自動で約5分の1に圧縮、たまり具合は遠隔で把握",
+            "publisher": "ITmedia",
+            "url": "https://www.itmedia.co.jp/news/article/2611/09/2000003031/",
+            "date": "2026-11-09"
+          }
+        ]
+      },
+      {
+        "kind": "deep",
+        "title": "ベトナム会談に見る日本農業のアジア展開",
+        "interest": "農業・食",
+        "sources": [
+          {
+            "id": "S5",
+            "title": "武部農林水産大臣とチン・ヴィエット・フン・ベトナム農業・環境大臣との会談について",
+            "publisher": "農林水産省",
+            "url": "https://www.maff.go.jp/j/press/yusyutu_kokusai/chiiki/261109.html",
+            "date": "2026-11-09"
+          }
+        ]
+      },
+      {
+        "kind": "skill",
+        "title": "STPを具体的な行動に移す「4P分析」の全体像",
+        "interest": "スキル",
+        "sources": []
+      },
+      {
+        "kind": "takeaway",
+        "title": "Kenの事業への示唆",
+        "interest": "",
+        "sources": []
+      },
+      {
+        "kind": "closing",
+        "title": "クロージング",
+        "interest": "",
+        "sources": []
+      }
+    ],
+    "factcheck": {
+      "checked_lines": 54,
+      "fixed": 0,
+      "removed": 0,
+      "summary": "台本に記載されたすべての事実情報（日付、数値、固有名詞、出典情報など）は提供された証拠および前提条件と完全に一致しており、修正が必要な箇所はありませんでした。"
+    },
+    "usage_note": "費用 0円（Gemini 無料枠：文章の生成 3 回／音声は VOICEVOX）",
+    "credits": "VOICEVOX:春日部つむぎ / VOICEVOX:玄野武宏"
+  },
+  {
+    "id": "20261109",
+    "date": "2026-11-09",
+    "pub": "2026-11-09T19:36:08+09:00",
+    "title": "大手ECの不正アクセスと防衛策",
+    "summary": "Sakana AIの初アプリや景気動向指数などの重要ニュースを整理。深掘りでは相次ぐ大手ECの不正アクセス事例から、小規模ショップが取るべき認証防御を解説します。",
+    "mp3": "20261109-193608.mp3",
+    "bytes": 4602937,
+    "duration": 575.3,
+    "guid": "ken-s-daily-brief-20261109-193608",
+    "segments": [
+      {
+        "kind": "opening",
+        "title": "オープニング",
+        "interest": "",
+        "sources": []
+      },
+      {
+        "kind": "headline",
+        "title": "Sakana AIが初のモバイルアプリを開発",
+        "interest": "AI・テック",
+        "sources": [
+          {
+            "id": "S1",
+            "title": "Sakana AI「初のモバイルアプリ」開発中 テスターも募集",
+            "publisher": "ITmedia",
+            "url": "https://www.itmedia.co.jp/aiplus/article/2611/09/2000003008/",
+            "date": "2026-11-09"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "9月の景気動向指数、2か月ぶりに上昇",
+        "interest": "日本の経済・金融",
+        "sources": [
+          {
+            "id": "S2",
+            "title": "9月景気動向指数 前月比0.7ポイント上昇 2か月ぶり上昇",
+            "publisher": "NHK",
+            "url": "https://news.web.nhk/newsweb/na/nd-20261109de73001",
+            "date": "2026-11-09"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "PCモニターにも広がる値上げの動き",
+        "interest": "中小企業・価格転嫁",
+        "sources": [
+          {
+            "id": "S3",
+            "title": "モニターにも値上げの波？ アイオーデータは10月に実施、EIZOも12月以降に メーカー各社に聞いた",
+            "publisher": "ITmedia",
+            "url": "https://www.itmedia.co.jp/news/article/2611/09/2000003015/",
+            "date": "2026-11-09"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "車から強力電波を発信、2Gに強制接続させ逮捕",
+        "interest": "日本の経済・金融",
+        "sources": [
+          {
+            "id": "S4",
+            "title": "車から強力電波 周辺スマホ強制的に2Gに 詐欺メール送信狙いか",
+            "publisher": "NHK",
+            "url": "https://news.web.nhk/newsweb/na/nd-20261109de72718",
+            "date": "2026-11-09"
+          }
+        ]
+      },
+      {
+        "kind": "deep",
+        "title": "大手ECで相次ぐ不正アクセスと、ネットショップが取るべき認証防御",
+        "interest": "EC・越境EC",
+        "sources": [
+          {
+            "id": "S5",
+            "title": "ニトリ、不正アクセスにより個人・法人会員の情報最大3762万件が流出の可能性",
+            "publisher": "インプレス",
+            "url": "https://internet.watch.impress.co.jp/docs/news/2154931.html",
+            "date": "2026-11-09"
+          },
+          {
+            "id": "S6",
+            "title": "無印良品ネットストア、再開延期 リスト型攻撃を確認",
+            "publisher": "インプレス",
+            "url": "https://www.watch.impress.co.jp/docs/news/2154921.html",
+            "date": "2026-11-09"
+          }
+        ]
+      },
+      {
+        "kind": "skill",
+        "title": "STP分析の第3ステップ：競合と差別化する「ポジショニング」の決め方",
+        "interest": "スキル",
+        "sources": []
+      },
+      {
+        "kind": "takeaway",
+        "title": "Kenのビジネスへの示唆",
+        "interest": "",
+        "sources": []
+      },
+      {
+        "kind": "closing",
+        "title": "エンディング",
+        "interest": "",
+        "sources": []
+      }
+    ],
+    "factcheck": {
+      "checked_lines": 61,
+      "fixed": 0,
+      "removed": 0,
+      "summary": "台本のすべての記述が提供された証拠記事および設定と整合しており、事実関係の誤りや誇張は見当たりませんでした。"
+    },
+    "usage_note": "費用 0円（Gemini 無料枠：文章の生成 3 回／音声は VOICEVOX）",
+    "credits": "VOICEVOX:春日部つむぎ / VOICEVOX:玄野武宏"
+  },
+  {
+    "id": "20261108",
+    "date": "2026-11-08",
+    "pub": "2026-11-08T21:56:16+09:00",
+    "title": "マルチエージェント設計と食料品減税の動き",
+    "summary": "食料品の消費税減税法案やMetaの新機能などを概観し、GitHubやGoogleが示すマルチエージェント設計の15パターンを深掘りします。",
+    "mp3": "20261108-215616.mp3",
+    "bytes": 3263397,
+    "duration": 407.8,
+    "guid": "ken-s-daily-brief-20261108-215616",
+    "segments": [
+      {
+        "kind": "opening",
+        "title": "オープニング",
+        "interest": "",
+        "sources": []
+      },
+      {
+        "kind": "headline",
+        "title": "食料品の消費税減税法案が参議院へ",
+        "interest": "日本の経済・金融",
+        "sources": [
+          {
+            "id": "S1",
+            "title": "消費税減税法案 片山財務相 食料品の販売価格下がる見通し示す",
+            "publisher": "NHK",
+            "url": "https://news.web.nhk/newsweb/na/nd-20261108de72482",
+            "date": "2026-11-08"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "HIS子会社によるモバイルWi-Fi割引の不当表示",
+        "interest": "マーケ・SNS",
+        "sources": [
+          {
+            "id": "S2",
+            "title": "HIS子会社がモバイルWi-Fiレンタル料で不当表示 消費者庁",
+            "publisher": "NHK",
+            "url": "https://news.web.nhk/newsweb/na/nd-20261107de72235",
+            "date": "2026-11-07"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "MetaがMuse向け新機能スペースを提供開始",
+        "interest": "AI・テック",
+        "sources": [
+          {
+            "id": "S3",
+            "title": "Meta、「Muse」で自分専用アプリを作れる新機能「スペース」",
+            "publisher": "インプレス",
+            "url": "https://www.watch.impress.co.jp/docs/news/2154571.html",
+            "date": "2026-11-07"
+          }
+        ]
+      },
+      {
+        "kind": "headline",
+        "title": "米トランプ大統領がミラー氏を首席補佐官に任命",
+        "interest": "世界情勢",
+        "sources": [
+          {
+            "id": "S4",
+            "title": "トランプ氏、首席補佐官に強硬派ミラー氏任命 中間選挙の歴史的敗北受け人事刷新",
+            "publisher": "BBC",
+            "url": "https://www.bbc.com/japanese/articles/cj62yye5krz3o?at_medium=RSS&at_campaign=rss",
+            "date": "2026-11-07"
+          }
+        ]
+      },
+      {
+        "kind": "deep",
+        "title": "複数AIの協調で業務を変えるマルチエージェント設計",
+        "interest": "AI・テック",
+        "sources": [
+          {
+            "id": "S5",
+            "title": "【図解あり】マルチエージェント設計「15のパターン」 GitHub、Google、Siemensの知見を一気に整理",
+            "publisher": "ITmedia",
+            "url": "https://atmarkit.itmedia.co.jp/ait/articles/2611/08/news001.html",
+            "date": "2026-11-08"
+          },
+          {
+            "id": "S3",
+            "title": "Meta、「Muse」で自分専用アプリを作れる新機能「スペース」",
+            "publisher": "インプレス",
+            "url": "https://www.watch.impress.co.jp/docs/news/2154571.html",
+            "date": "2026-11-07"
+          }
+        ]
+      },
+      {
+        "kind": "skill",
+        "title": "STP分析の第2ステップ：ターゲティングの評価軸",
+        "interest": "スキル",
+        "sources": []
+      },
+      {
+        "kind": "takeaway",
+        "title": "Kenのビジネスへの示唆",
+        "interest": "",
+        "sources": [
+          {
+            "id": "S2",
+            "title": "HIS子会社がモバイルWi-Fiレンタル料で不当表示 消費者庁",
+            "publisher": "NHK",
+            "url": "https://news.web.nhk/newsweb/na/nd-20261107de72235",
+            "date": "2026-11-07"
+          },
+          {
+            "id": "S5",
+            "title": "【図解あり】マルチエージェント設計「15のパターン」 GitHub、Google、Siemensの知見を一気に整理",
+            "publisher": "ITmedia",
+            "url": "https://atmarkit.itmedia.co.jp/ait/articles/2611/08/news001.html",
+            "date": "2026-11-08"
+          },
+          {
+            "id": "S1",
+            "title": "消費税減税法案 片山財務相 食料品の販売価格下がる見通し示す",
+            "publisher": "NHK",
+            "url": "https://news.web.nhk/newsweb/na/nd-20261108de72482",
+            "date": "2026-11-08"
+          }
+        ]
+      },
+      {
+        "kind": "closing",
+        "title": "エンディング",
+        "interest": "",
+        "sources": []
+      }
+    ],
+    "factcheck": {
+      "checked_lines": 48,
+      "fixed": 1,
+      "removed": 0,
+      "summary": "ニュース各項や本人の取り組みに関する記述は概ね正確ですが、マルチエージェント設計の課題を説明したL30に証拠本文にない表現が含まれていたため修正しました。"
+    },
+    "usage_note": "費用 0円（Gemini 無料枠：文章の生成 3 回／音声は VOICEVOX）",
+    "credits": "VOICEVOX:春日部つむぎ / VOICEVOX:玄野武宏"
+  }
+]
