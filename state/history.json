@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-11-15",
+    "title": "Ken's Daily Brief 20261115",
+    "segments": [
+      {
+        "kind": "headline",
+        "title": "オープンAIがチャットGPTウォレットを発表",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "headline",
+        "title": "在日米軍駐留経費でアメリカが約3倍の負担を要求",
+        "interest": "日本の経済・金融"
+      },
+      {
+        "kind": "headline",
+        "title": "データセンターの排熱を活用したエビ養殖の実証実験",
+        "interest": "農業・食"
+      },
+      {
+        "kind": "headline",
+        "title": "京成電鉄の予約システムに不正アクセス",
+        "interest": "中小企業・価格転嫁"
+      },
+      {
+        "kind": "deep",
+        "title": "AIエージェントの自動決済チャットGPTウォレットとEC事業者の新インフラ",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "skill",
+        "title": "ビジネスの安全装置損益分岐点の考え方と計算の仕組み",
+        "interest": "スキル"
+      }
+    ]
+  },
+  {
     "date": "2026-11-14",
     "title": "Ken's Daily Brief 20261114",
     "segments": [
