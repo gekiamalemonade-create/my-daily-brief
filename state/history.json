@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-11-16",
+    "title": "X画像20枚拡大とプロモーション設計",
+    "segments": [
+      {
+        "kind": "headline",
+        "title": "エヌビディア前CEOの復帰求める署名が11万人超え",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "headline",
+        "title": "食料品消費税減税法案が参議院で審議継続",
+        "interest": "日本の経済・金融"
+      },
+      {
+        "kind": "headline",
+        "title": "ハンズ渋谷店が48年の歴史に幕",
+        "interest": "マーケ・SNS"
+      },
+      {
+        "kind": "headline",
+        "title": "スペースXが大型宇宙船の発射台キャッチに初成功",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "deep",
+        "title": "Xの画像最大20枚拡大が変えるSNSマーケティングとカルーセル戦略",
+        "interest": "マーケ・SNS"
+      },
+      {
+        "kind": "skill",
+        "title": "4Pの第4要素：価値を伝え購買へと導くプロモーション設計",
+        "interest": "スキル"
+      }
+    ]
+  },
+  {
     "date": "2026-11-15",
     "title": "Ken's Daily Brief 20261115",
     "segments": [
