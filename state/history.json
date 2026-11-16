@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-11-17",
+    "title": "自律型AI攻撃の到来とフラッグシップ輸出産地",
+    "segments": [
+      {
+        "kind": "headline",
+        "title": "Google、人間の関与なしに脆弱性を見つけて悪用するAIフレームワークを初めて観測",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "headline",
+        "title": "日銀 高田審議委員「グッドポジションへ 機動的利上げを」",
+        "interest": "日本の経済・金融"
+      },
+      {
+        "kind": "headline",
+        "title": "第4回フラッグシップ輸出産地の募集を開始",
+        "interest": "農業・食"
+      },
+      {
+        "kind": "headline",
+        "title": "トランプ大統領 アジア訪問へ出発 初の米中ロ首脳会談も",
+        "interest": "世界情勢"
+      },
+      {
+        "kind": "deep",
+        "title": "AIエージェントが自律的に脆弱性を突く時代：サイバー攻撃の自動化と事業者が取るべき防御策",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "skill",
+        "title": "価格交渉の基本フレームワーク",
+        "interest": "スキル"
+      }
+    ]
+  },
+  {
     "date": "2026-11-16",
     "title": "X画像20枚拡大とプロモーション設計",
     "segments": [
