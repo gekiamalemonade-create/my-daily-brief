@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-11-19",
+    "title": "Ken's Daily Brief 11月19日",
+    "segments": [
+      {
+        "kind": "headline",
+        "title": "OpenAIが「GPT-6.2 Astra／Sol」を発表",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "headline",
+        "title": "消費減税の支援金、年収56万円程度から検討",
+        "interest": "日本の経済・金融"
+      },
+      {
+        "kind": "headline",
+        "title": "OpenAI、企業向け確認機能の提供を開始",
+        "interest": "マーケ・SNS"
+      },
+      {
+        "kind": "headline",
+        "title": "KDDI、ネットにつながらない携帯を発売へ",
+        "interest": "マーケ・SNS"
+      },
+      {
+        "kind": "deep",
+        "title": "主食用米の抑制転換へ：農水省の補助金見直しが米農家と流通・ECに与える影響",
+        "interest": "農業・食"
+      },
+      {
+        "kind": "skill",
+        "title": "顧客の心理と行動を段階で捉える「マーケティングファネル」の基本",
+        "interest": "スキル"
+      }
+    ]
+  },
+  {
     "date": "2026-11-17",
     "title": "自律型AI攻撃の到来とフラッグシップ輸出産地",
     "segments": [
