@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-11-20",
+    "title": "米中ロ初会談と独自の視点を築く表現手法",
+    "segments": [
+      {
+        "kind": "headline",
+        "title": "米アンソロピックがナスダック上場、約13兆円を調達",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "headline",
+        "title": "米中ロ首脳が深センで初の3か国会談",
+        "interest": "世界情勢"
+      },
+      {
+        "kind": "headline",
+        "title": "楽天証券に金融庁が報告徴求命令、447万口座漏えい懸念で",
+        "interest": "日本の経済・金融"
+      },
+      {
+        "kind": "headline",
+        "title": "ファミリーマートが飲料補充AIロボットを2027年本格導入",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "deep",
+        "title": "アンソニー・ボーディンに学ぶ独創性とオーセンティシティ",
+        "interest": "教養"
+      },
+      {
+        "kind": "skill",
+        "title": "黒字倒産を防ぐ命綱：利益と現金のズレを掴むキャッシュフローの基本",
+        "interest": "スキル"
+      }
+    ]
+  },
+  {
     "date": "2026-11-19",
     "title": "Ken's Daily Brief 11月19日",
     "segments": [
