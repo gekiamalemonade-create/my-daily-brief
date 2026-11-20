@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-11-21",
+    "title": "Ken's Daily Brief 2026年11月21日",
+    "segments": [
+      {
+        "kind": "headline",
+        "title": "農林水産省が米に関するマンスリーレポートを公表",
+        "interest": "農業・食"
+      },
+      {
+        "kind": "headline",
+        "title": "ニューヨーク市場でナスダック指数が一時5パーセント超の急落",
+        "interest": "日本の経済・金融"
+      },
+      {
+        "kind": "headline",
+        "title": "ドン・キホーテのAI社員近藤あいが正式デビュー",
+        "interest": "マーケ・SNS"
+      },
+      {
+        "kind": "headline",
+        "title": "トランプ大統領が中ロ首脳との3者会談の意義を強調",
+        "interest": "世界情勢"
+      },
+      {
+        "kind": "deep",
+        "title": "米の需給動向と農林水産省のデータ公開から考える流通とデータの仕組み",
+        "interest": "農業・食"
+      },
+      {
+        "kind": "skill",
+        "title": "ビジネスで使える平均値と中央値の正しい使い分けとデータの罠",
+        "interest": "スキル"
+      }
+    ]
+  },
+  {
     "date": "2026-11-20",
     "title": "米中ロ初会談と独自の視点を築く表現手法",
     "segments": [
