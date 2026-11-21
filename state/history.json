@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-11-22",
+    "title": "AI活用企業の増員傾向とデータ管理の境界線",
+    "segments": [
+      {
+        "kind": "headline",
+        "title": "AIで成果を出す企業ほど人員を増やす傾向、IDC調査",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "headline",
+        "title": "TikTokがAI生成チェック機能と肖像検出機能を公開",
+        "interest": "マーケ・SNS"
+      },
+      {
+        "kind": "headline",
+        "title": "東京国税局が暗号資産で39億円超の申告漏れを指摘",
+        "interest": "日本の経済・金融"
+      },
+      {
+        "kind": "headline",
+        "title": "トランプ米大統領、米国外のデータセンター建設に罰則方針",
+        "interest": "世界情勢"
+      },
+      {
+        "kind": "deep",
+        "title": "業務AIツール経由の情報漏えいと事業者のデータ管理",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "skill",
+        "title": "マーケティング投資の健全性を測るLTVとCACの基本関係",
+        "interest": "スキル"
+      }
+    ]
+  },
+  {
     "date": "2026-11-21",
     "title": "Ken's Daily Brief 2026年11月21日",
     "segments": [
