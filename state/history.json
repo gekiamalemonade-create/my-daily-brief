@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-11-23",
+    "title": "AIが挑む数学の難問と損益分岐点の基本",
+    "segments": [
+      {
+        "kind": "headline",
+        "title": "AIがリーマン予想を証明と主張",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "headline",
+        "title": "暗号資産の申告漏れ巡り国税が調査強化",
+        "interest": "投資・資産形成"
+      },
+      {
+        "kind": "headline",
+        "title": "韓国の大学入試でAI対策巡り教育相が辞意",
+        "interest": "世界情勢"
+      },
+      {
+        "kind": "headline",
+        "title": "タワーレコードで1100万件の情報流出",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "deep",
+        "title": "AIが挑む数学の難問と検証プロセスの仕組み",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "skill",
+        "title": "ビジネスの基礎：損益分岐点の考え方と計算の仕組み",
+        "interest": "スキル"
+      }
+    ]
+  },
+  {
     "date": "2026-11-22",
     "title": "AI活用企業の増員傾向とデータ管理の境界線",
     "segments": [
