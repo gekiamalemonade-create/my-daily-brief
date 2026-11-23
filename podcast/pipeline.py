@@ -64,7 +64,8 @@ def run(root=None, site_dir="site", out_dir="out", date: str | None = None, skip
     text_calls = len(llm.calls)
     usage = f"費用 0円（Gemini 無料枠：文章の生成 {text_calls} 回" + (f"／音声は {'Gemini' if engine == 'gemini' else 'VOICEVOX'}" if engine else "") + "）"
     ep = publish(cfg, site_dir, now, script, mats, report, mp3, info, usage_note=usage,
-                 credits=voicevox.credits(cfg) if engine == "voicevox" else "")
+                 credits=voicevox.credits(cfg) if engine == "voicevox" else "",
+                 bgm_credit=(cfg.show.get("bgm") or {}).get("credit", "") if info.get("bgm") else "")
 
     if not mock:  # テストの回は記録しない（好みの学習や重複チェックを汚さない）
         state.add_episode({"date": now.date().isoformat(), "title": script["title"],

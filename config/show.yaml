@@ -46,6 +46,17 @@ hosts:
     style: 好奇心があり、テンポよく、親しみやすい
     voicevox: 玄野武宏
 
+# BGM（ずっと小さく流す）。assets/ に曲（mp3）を置いて file に名前を書く。曲が無ければ BGM なしで作る
+#   volume: 曲の大きさ（0.05＝かなり小さい〜0.2＝はっきり聞こえる）
+#   ducking: 声が出ている間に曲をさらに下げる強さ（1＝下げない〜8＝強く下げる）
+#   ※ 番組は URL を知っていれば誰でも聴けるので、使ってよい曲（自作・規約で許可されたフリー素材）だけにすること
+bgm:
+  file: assets/bgm.mp3          # この名前で曲を置くと、番組全体に小さく流れる（無ければ BGM なし）
+  volume: 0.12                  # うるさければ 0.08、小さければ 0.18 など
+  ducking: 4                    # 声が出ている間に BGM をどれだけ下げるか
+  credit: ""                    # クレジットが必要な曲は書く（番組ページと RSS に載る）
+                                # 例: "曲名" Kevin MacLeod (incompetech.com) Licensed under CC BY 4.0
+
 tts:
   engine: gemini                # gemini（自然な声）/ voicevox（台本を Google に送らない・回数制限なし）
   model: gemini-3.8-flash-tts

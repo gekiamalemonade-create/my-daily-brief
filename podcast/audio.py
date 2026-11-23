@@ -21,6 +21,18 @@ def duration_of(path: Path) -> float:
     return float(out or 0)
 
 
+def _bgm_file(cfg) -> Path | None:
+    """show.yaml の bgm.file に曲があれば、そのパスを返す（無ければ BGM なし）"""
+    b = cfg.show.get("bgm") or {}
+    if not b.get("file") or b.get("enabled", True) is False:
+        return None
+    p = Path(cfg.root) / b["file"]
+    if not p.exists():
+        log.warning("音声: BGM の曲 %s が見つからないので、BGM なしで作ります", b["file"])
+        return None
+    return p
+
+
 def make_mp3(cfg, chunks: list[dict], out_mp3: Path, meta: dict) -> dict:
     out_mp3 = Path(out_mp3)
     work = out_mp3.parent / "_audio"
@@ -58,13 +70,33 @@ def make_mp3(cfg, chunks: list[dict], out_mp3: Path, meta: dict) -> dict:
 
     lst = work / "list.txt"
     lst.write_text("".join("file '{}'\n".format(str(p.resolve()).replace("'", "'\\''")) for p in seq), encoding="utf-8")
+    voice = work / "voice.wav"
     ffmpeg("-f", "concat", "-safe", "0", "-i", str(lst),
-           "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-ar", "44100", "-ac", "1",
-           "-c:a", "libmp3lame", "-b:a", str(cfg.tts.get("mp3_bitrate", "64k")),
-           "-metadata", f"title={meta['title']}", "-metadata", f"artist={meta['artist']}",
-           "-metadata", f"album={meta['album']}", "-metadata", f"date={meta['date']}",
-           str(out_mp3))
+           "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-ar", "44100", "-ac", "1", str(voice))
+
+    encode = ["-ar", "44100", "-ac", "1", "-c:a", "libmp3lame", "-b:a", str(cfg.tts.get("mp3_bitrate", "64k")),
+              "-metadata", f"title={meta['title']}", "-metadata", f"artist={meta['artist']}",
+              "-metadata", f"album={meta['album']}", "-metadata", f"date={meta['date']}"]
+    bgm = _bgm_file(cfg)
+    if bgm:
+        b = cfg.show.get("bgm") or {}
+        total = duration_of(voice)
+        fade_out = max(total - 4.0, 0.0)
+        # BGM を繰り返して小さく流し、声が出ている間はさらに少し下げる（ダッキング）
+        graph = (f"[0]asplit=2[v1][v2];"
+                 f"[1]aformat=sample_rates=44100:channel_layouts=mono,volume={float(b.get('volume', 0.12))},"
+                 f"afade=t=in:d=3,afade=t=out:st={fade_out:.2f}:d=4[m];"
+                 f"[m][v1]sidechaincompress=threshold=0.03:ratio={float(b.get('ducking', 4))}:attack=30:release=600[md];"
+                 f"[v2][md]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95")
+        try:
+            ffmpeg("-i", str(voice), "-stream_loop", "-1", "-i", str(bgm), "-filter_complex", graph, *encode, str(out_mp3))
+            log.info("音声: BGM を重ねました（%s）", bgm.name)
+        except subprocess.CalledProcessError:
+            log.warning("音声: BGM（%s）を重ねられなかったので、声だけで作ります", bgm.name)
+            bgm = None
+    if not bgm:
+        ffmpeg("-i", str(voice), *encode, str(out_mp3))
     shutil.rmtree(work, ignore_errors=True)
-    info = {"duration": round(duration_of(out_mp3), 1), "bytes": out_mp3.stat().st_size}
+    info = {"duration": round(duration_of(out_mp3), 1), "bytes": out_mp3.stat().st_size, "bgm": bool(bgm)}
     log.info("音声: MP3 完成 %.1f分 / %.1fMB", info["duration"] / 60, info["bytes"] / 1e6)
     return info
