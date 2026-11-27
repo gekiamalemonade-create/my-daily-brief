@@ -140,6 +140,8 @@ def episode_page(cfg, ep: dict, script: dict, report: dict) -> str:
     parts.append(f"<h2>台本</h2><details><summary>全文を表示</summary>{lines}</details>")
     if ep.get("credits"):
         parts.append(f'<p class="note">音声合成: {E(ep["credits"])}</p>')
+    if ep.get("bgm_credit"):
+        parts.append(f'<p class="note">BGM: {E(ep["bgm_credit"])}</p>')
     parts.append(f'<p class="note">{E(ep.get("usage_note", ""))}</p>')
     fb_json = json.dumps(fb_conf, ensure_ascii=False).replace("</", "<\\/")
     return _page(f"{ep['title']}｜{cfg.show['title']}", "".join(parts), f"const FB={fb_json};" + JS)
@@ -178,6 +180,8 @@ def feed_xml(cfg, episodes: list[dict], now: dt.datetime) -> str:
         desc.append(f'</ul><p><a href="{base}/episodes/{e["id"]}.html">出典・評価ボタン・台本はこちら</a></p>')
         if e.get("credits"):
             desc.append(f"<p>音声合成: {E(e['credits'])}</p>")
+        if e.get("bgm_credit"):
+            desc.append(f"<p>BGM: {E(e['bgm_credit'])}</p>")
         items.append(
             "<item>"
             f"<title>{xesc(pub.strftime('%m/%d') + ' ' + e['title'])}</title>"
@@ -208,7 +212,7 @@ def feed_xml(cfg, episodes: list[dict], now: dt.datetime) -> str:
 
 
 def publish(cfg, site_dir, now: dt.datetime, script: dict, mats: dict, report: dict, mp3_src, audio_info: dict,
-            usage_note: str = "", credits: str = "") -> dict:
+            usage_note: str = "", credits: str = "", bgm_credit: str = "") -> dict:
     site = Path(site_dir)
     eps_dir = site / "episodes"
     eps_dir.mkdir(parents=True, exist_ok=True)
@@ -239,7 +243,7 @@ def publish(cfg, site_dir, now: dt.datetime, script: dict, mats: dict, report: d
         "bytes": int(audio_info.get("bytes", 0)), "duration": float(audio_info.get("duration", 0)),
         "guid": f"{_slug(cfg.show['title'])}-{ep_id}-{stamp}", "segments": segs,
         "factcheck": {k: report.get(k) for k in ("checked_lines", "fixed", "removed", "summary")},
-        "usage_note": usage_note, "credits": credits,
+        "usage_note": usage_note, "credits": credits, "bgm_credit": bgm_credit,
     }
     episodes.insert(0, ep)
     episodes.sort(key=lambda e: e["id"], reverse=True)
