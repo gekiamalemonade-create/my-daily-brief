@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-11-28",
+    "title": "自社EC撤退に見るセキュリティの現実",
+    "segments": [
+      {
+        "kind": "headline",
+        "title": "令和8年10月の米穀流通動向と民間在庫",
+        "interest": "農業・食"
+      },
+      {
+        "kind": "headline",
+        "title": "MCPの新機能Skills over MCPが登場",
+        "interest": "AI・テック"
+      },
+      {
+        "kind": "headline",
+        "title": "TPP支援事務所の日本設置と新加盟交渉",
+        "interest": "日本の経済・金融"
+      },
+      {
+        "kind": "headline",
+        "title": "電通が推進するGemini実践人材育成",
+        "interest": "マーケ・SNS"
+      },
+      {
+        "kind": "deep",
+        "title": "自社EC閉鎖に見るデータ保護の重圧と選択",
+        "interest": "EC・越境EC"
+      },
+      {
+        "kind": "skill",
+        "title": "交渉を有利に進めるBATNAと妥協ライン",
+        "interest": "スキル"
+      }
+    ]
+  },
+  {
     "date": "2026-11-23",
     "title": "AIが挑む数学の難問と損益分岐点の基本",
     "segments": [
