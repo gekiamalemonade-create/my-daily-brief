@@ -4,6 +4,8 @@ name: daily-podcast
 on:
   schedule:
     - cron: "40 20 * * *"   # 毎日 05:40（日本時間）。GitHub は UTC で書くので 20:40。混雑時は数分〜遅れることがあります
+    - cron: "40 22 * * *"   # 07:40 の予備。05:40 の回が失敗したときだけ作り直す（できていれば何もしない）
+    - cron: "40 0 * * *"    # 09:40 の予備（同上）
   workflow_dispatch:
     inputs:
       mock:
@@ -57,7 +59,19 @@ jobs:
             rm -rf _pages
           fi
 
+      - name: 今日の回がもうあるか確認（予備の定期実行は、できていれば何もしない）
+        id: check
+        run: |
+          today="$(TZ=Asia/Tokyo date +%Y%m%d)"
+          if [ "${{ github.event_name }}" = "schedule" ] && [ -f "site/episodes/${today}.html" ]; then
+            echo "今日（${today}）の回はもうできているので、ここで終わります"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: エピソードを作る
+        if: steps.check.outputs.skip != 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           FEEDBACK_URL: ${{ secrets.FEEDBACK_URL }}
@@ -74,6 +88,7 @@ jobs:
           fi
 
       - name: 公開ファイルを保管（gh-pages ブランチを最新の1コミットだけにして置き換え）
+        if: steps.check.outputs.skip != 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -85,14 +100,17 @@ jobs:
           git push --force --quiet "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
 
       - uses: actions/upload-pages-artifact@v5
+        if: steps.check.outputs.skip != 'true'
         with:
           path: site
 
       - name: GitHub Pages に公開
+        if: steps.check.outputs.skip != 'true'
         id: deploy
         uses: actions/deploy-pages@v5
 
       - name: 学習の記録を保存（state/）
+        if: steps.check.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

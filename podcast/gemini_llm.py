@@ -21,6 +21,12 @@ from .util import extract_json
 log = logging.getLogger("podcast")
 
 RETRYABLE = {429, 500, 502, 503, 504}
+# 混雑（503 など）は数分で収まることが多いので、1つのモデルにつき5回・最長で約5分半まで待つ
+ATTEMPTS = 5
+
+
+def _wait(base: float, attempt: int) -> float:
+    return min(base * (1, 2, 3, 4.5, 6)[min(attempt, 4)], 120.0)
 
 SYSTEM_RESEARCH = (
     "あなたは正確さを最優先するリサーチャーです。検索で見つけた信頼できる情報源に書かれていることだけを根拠にし、"
@@ -81,7 +87,7 @@ class Gemini:
         base_wait = float(os.environ.get("PODCAST_RETRY_BASE_SEC", "20"))
         last: Exception | None = None
         for model in models:
-            for attempt in range(3):
+            for attempt in range(ATTEMPTS):
                 t0 = time.time()
                 try:
                     resp = self.client.models.generate_content(model=model, contents=contents, config=config)
@@ -99,12 +105,12 @@ class Gemini:
                     if code not in RETRYABLE:
                         log.warning("  %s: %s でエラー（%s）", step, model, str(e)[:160])
                         break
-                    wait = base_wait * (attempt + 1)
+                    wait = _wait(base_wait, attempt)
                     log.warning("  %s: %s が混雑・上限（%s）。%.0f秒待って再試行", step, model, code, wait)
                     time.sleep(wait)
                 except Exception as e:  # 通信の切断・タイムアウトなど（API の応答そのものが届かなかった）
                     last = e
-                    wait = base_wait * (attempt + 1)
+                    wait = _wait(base_wait, attempt)
                     log.warning("  %s: %s との通信が切れました（%s）。%.0f秒待って再試行",
                                 step, model, type(e).__name__, wait)
                     time.sleep(wait)
